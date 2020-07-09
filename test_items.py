@@ -10,5 +10,4 @@ def test_add_to_cart_button_exist(driver):
     driver.get(link)
     time.sleep(30)
     add_to_cart_btn = WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".btn-add-to-basket")))
-    assert add_to_cart_btn, \
-    f"Add to cart button button is not present on the page"
+    assert add_to_cart_btn, "Add to cart button is not present on the page"
